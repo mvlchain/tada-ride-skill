@@ -1,0 +1,74 @@
+---
+---
+<section class="hero">
+  <div class="container">
+    <p class="hero-overline">AI-Powered Ride Hailing</p>
+    <h1 class="hero-title">
+      Book a ride with<br /><span class="hero-accent">your AI agent</span>
+    </h1>
+    <p class="hero-subtitle">
+      Your AI agent books TADA rides, manages crypto wallet, and chats with drivers — all through natural conversation.
+    </p>
+    <div class="hero-install">
+      <code>
+        <span class="hero-prompt">$</span> git clone https://github.com/mvlchain/tada-ride-skill
+      </code>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 100px 0 80px;
+  }
+  .hero-overline {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--color-text-tertiary);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .hero-title {
+    font-family: var(--font-heading);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.0;
+    letter-spacing: -0.65px;
+    margin-bottom: 24px;
+  }
+  .hero-accent {
+    color: var(--color-accent);
+    filter: var(--glow-accent);
+  }
+  .hero-subtitle {
+    font-size: 18px;
+    color: var(--color-text-secondary);
+    max-width: 520px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  .hero-install {
+    display: inline-block;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+  .hero-install code {
+    color: var(--color-text);
+  }
+  .hero-prompt {
+    color: var(--color-text-tertiary);
+    margin-right: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .hero { padding: 60px 0 48px; }
+    .hero-title { font-size: 36px; }
+    .hero-subtitle { font-size: 16px; }
+    .hero-install { font-size: 13px; padding: 12px 16px; }
+  }
+</style>
