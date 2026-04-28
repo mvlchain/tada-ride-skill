@@ -1,0 +1,60 @@
+---
+---
+<section id="demo" class="section">
+  <div class="container">
+    <p class="section-label">See it in action</p>
+    <h2 class="section-title">Works where you work</h2>
+    <div class="demo-grid">
+      <div class="demo-card">
+        <h3 class="demo-card-title">Claude Code</h3>
+        <div class="demo-placeholder">
+          <span>screencast coming soon</span>
+        </div>
+      </div>
+      <div class="demo-card">
+        <h3 class="demo-card-title">OpenClaw (Telegram)</h3>
+        <div class="demo-placeholder">
+          <span>screencast coming soon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .demo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .demo-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+  }
+  .demo-card-title {
+    font-size: 14px;
+    color: var(--color-text-tertiary);
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .demo-placeholder {
+    background: var(--color-bg);
+    border: 1px dashed rgba(79, 93, 117, 0.4);
+    border-radius: var(--radius-sm);
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-border);
+    font-family: var(--font-mono);
+    font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+    .demo-grid { grid-template-columns: 1fr; }
+  }
+</style>
