@@ -1,0 +1,57 @@
+---
+const features = [
+  { icon: '🚕', title: 'Ride Booking', desc: 'Search, book, and track rides through natural language.' },
+  { icon: '💳', title: 'Crypto Wallet', desc: 'Auto-created Privy wallet with USDC payments on-chain.' },
+  { icon: '💬', title: 'Driver Chat', desc: 'Real-time WebSocket messaging with your driver.' },
+  { icon: '🌏', title: 'NY & Singapore', desc: 'Available in New York and Singapore today.' },
+];
+---
+<section id="features" class="section">
+  <div class="container">
+    <p class="section-label">Features</p>
+    <h2 class="section-title">Everything you need to ride</h2>
+    <div class="features-grid">
+      {features.map(f => (
+        <div class="feature-card">
+          <div class="feature-icon">{f.icon}</div>
+          <h3 class="feature-title">{f.title}</h3>
+          <p class="feature-desc">{f.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .feature-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 28px;
+  }
+  .feature-icon {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .feature-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .feature-desc {
+    font-size: 14px;
+    color: var(--color-text-tertiary);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .features-grid { grid-template-columns: 1fr; }
+  }
+</style>
